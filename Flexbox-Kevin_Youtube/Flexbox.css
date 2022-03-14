@@ -1,0 +1,64 @@
+.video-link-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  z-index: 2;
+}
+
+.nav-list {
+  display: flex;
+  /* When we apply flex display to nav-list, every child in .nav-list will be a flex item */
+  /* Every flex item means every element will try to get as small as it can get maintaining one line */
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none; /*List styles removed*/
+
+  border: 3px solid rgb(190, 74, 74);
+
+  gap: 1rem; /*This is handy method in flex, to add space between flex elements */
+
+  /* This(flex-wrap) makes .nav-list responsive. As we decrease browser width, flex elements inside start to wrap in to make site responsive */
+  /* The default value of flex-wrap is unwrap */
+  flex-wrap: wrap;
+
+  flex-direction: row; /*default flex direction i row*/
+
+  justify-content: center; /*align items to center in flex direction*/
+  /* flex-start is default value, flex-end will align items to end of flexbox*/
+  /* Other values of justify-content are space-between equally distibutes space.*/
+  /* space-around adds space to right and left ends of box, works like space-between*/
+  /* space-evenly works like space-around it just add equal spaces in between.*/
+  /* If we don't have left over space in flexbox justyfy-content does not work. Same in case of flex-grow:1; */
+
+  align-items: center; /* align-items works on cross axis oposite of justify content.*/
+  /* default align-items value is 'strech', so by default height is max that can be given to flex item. */
+  /* If align-items:flex-start or flex-end, it will work like justify content only in cross axis */
+  /* align-items only works when one of the flex item has more content and require more height than others */
+  /* There is one more property align-self which can be applied to any individual item in flexbox. (ul>li in this case)*/
+}
+
+ul li {
+  border: 3px solid rgb(55, 160, 55);
+  /* width: max-content; */ /*there is width: min-content possible */
+
+  /* The default value of below rule flex-shrink is 1, which enables shrinking */
+  /* If flex-shrink:0, then shrinking is disabled, so if we minimize width of browser, shrinking of content of flex items is not achieved */
+  flex-shrink: 1;
+
+  /* The default value of below rule flex-grow is 0, which means growing is disabled*/
+  flex-grow: 0;
+
+  flex: 1;
+  /* flex:1 makes flex items responsive */
+  /* Understand what flex:1 is doing */
+  /* flex: 1 is equivalent to following: */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 80px; /* Here flex-basis is by default auto, but in this it becomes 0.Here 0 will give minimum width possible to every flex item */
+  /* We can think of flex-basis as width, it can have values in px, rem vw etc */
+  /* When we use flex:1 in flex items, all flex items will be of same size. */
+  /* flex-basis will apply provided width to each flex items */
+}
