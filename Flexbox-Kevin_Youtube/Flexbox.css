@@ -24,7 +24,7 @@
   /* The default value of flex-wrap is unwrap */
   flex-wrap: wrap;
 
-  flex-direction: row; /*default flex direction i row*/
+  flex-direction: row; /*default flex direction is row*/
 
   justify-content: center; /*align items to center in flex direction*/
   /* flex-start is default value, flex-end will align items to end of flexbox*/
@@ -50,12 +50,15 @@ ul li {
 
   /* The default value of below rule flex-grow is 0, which means growing is disabled*/
   flex-grow: 0;
+  /* When we put flex-grow:1, it will occupy all the space present in flexbox. */
+  /*When flex-grow:1 it will be little similar like flex-basis:100%, (there are difference, just for understanding purpose ) */
+  /*flex-grow:1 is exactly like justify-content:space-between*/
 
   flex: 1;
   /* flex:1 makes flex items responsive */
   /* Understand what flex:1 is doing */
   /* flex: 1 is equivalent to following: */
-  flex-grow: 0;
+  flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 80px; /* Here flex-basis is by default auto, but in this it becomes 0.Here 0 will give minimum width possible to every flex item */
   /* We can think of flex-basis as width, it can have values in px, rem vw etc */
