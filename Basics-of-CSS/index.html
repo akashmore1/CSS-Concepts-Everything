@@ -7,10 +7,20 @@
     <link rel="shortcut icon" href="favicon.png" />
     <!-- Below is another way to add css with style tag<>. -->
     <style>
-      section {
+      /* section {
         background: #ff1b68;
-      }
+      } */
     </style>
+
+    <!-- Google fonts -->
+    <!-- import google fonts above imported css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Always pefer external css -->
     <link rel="stylesheet" href="main.css" />
   </head>
@@ -21,11 +31,13 @@
       <!-- We do not go for inline style, because maintaining code becomes very difficult -->
       <!-- Inline style has highest priority -->
       <!-- Both sections have background red because of <style> tag -->
-      <section style="background: #ff1b68">
+      <section style="background: #ff1b68" id="product-overview">
         <h1>Get the freedom you deserve.</h1>
       </section>
-      <section>
-        <h1>Choose your plan</h1>
+
+      <!-- Id's are unique to each elements. Classes can be applied to multiple elements. -->
+      <section id="plans">
+        <h1 class="section-title">Choose your plan</h1>
       </section>
     </main>
   </body>
