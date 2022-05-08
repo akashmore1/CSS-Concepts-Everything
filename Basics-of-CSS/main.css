@@ -7,12 +7,41 @@ Inline css > Id's > Classes > tags
     background: #ff1b68;
 }
 
-h1{
+
+/* In below combinator css will be applied to any direct or indirect child of product-overview */
+#product-overview h1{
     color: white;
     font-family: 'Anton',
     sans-serif;
 }
 
 .section-title{
-        color: #2ddf5c;
+    color: #2ddf5c; 
+    font-family: inherit;
 }
+
+
+/* 
+1. In below case css will be applied to adjesant siblings
+i.e. css will be applied to all paragraphs which appear immediately after div
+div + p{
+
+}
+
+2. In below case css willbe applied to general siblings
+i.e. css will be applied to all p which hav div as sibling.
+(div and p may or may not be adjesant)
+div ~ p{
+
+}
+
+3. In below case css will be applied to direct child only
+div > p {
+
+}
+
+4. In below case css will be applied to all paragraphs who are direct or indirect child of div
+div p{
+
+}
+*/
