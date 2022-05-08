@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Default margin of body is 8px */
+    margin: 0;
+}
+
+
+/* 
+If two adjesant elements have margin then the magin collapses. The bigger margin wins
+*/
+
+
+/* 
+Short-hand properties for margin and padding order is:
+margin: top right bottom left
+or if only two
+margin: top-bottom right-left
+
+background is shorthand of lot of properties, background-color is one of them.
+*/
+
+#product-overview {
+    background: #ff1b68;
+    /* This padding will be applied to outside of margin of h1 tag,
+     as h1 is child os #product-overview */
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.section-title {
+    color: #2ddf5c;
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/* h1 {
+    font-family: sans-serif;
+} */
