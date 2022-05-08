@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>uHost</title>
-    <link rel="shortcut icon" href="favicon.png">
-</head>
+    <link rel="shortcut icon" href="favicon.png" />
+    <!-- Below is another way to add css with style tag<>. -->
+    <style>
+      section {
+        background: #ff1b68;
+      }
+    </style>
+    <!-- Always pefer external css -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <section>
-            <h1>Get the freedom you deserve.</h1>
-        </section>
+      <!-- inline css -->
+      <!-- We do not go for inline style, because maintaining code becomes very difficult -->
+      <!-- Inline style has highest priority -->
+      <!-- Both sections have background red because of <style> tag -->
+      <section style="background: #ff1b68">
+        <h1>Get the freedom you deserve.</h1>
+      </section>
+      <section>
+        <h1>Choose your plan</h1>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
