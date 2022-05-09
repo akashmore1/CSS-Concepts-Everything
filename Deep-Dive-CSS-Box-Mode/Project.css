@@ -103,7 +103,7 @@ body {
 
 #key-features {
   background: #ff1b68;
-  margin: 80px;
+  margin: 80px 0 0 0;
   padding: 16px;
 }
 
@@ -225,4 +225,32 @@ body {
   background: white;
   color: #ff1b68;
   border: none;
+}
+
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #cac7c7;
 }
