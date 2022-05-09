@@ -1,3 +1,10 @@
+/* 
+inline-block has one exception:
+the in two adjesant tags in editor is consitered as empty space which is displayedon browser.
+This can create confusion when we are applying width 50-50 % to two adjesant blocks, 
+as they will not appear next to each other even if display id inlin-block.
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -26,3 +33,29 @@ body {
 /* h1 {
     font-family: sans-serif;
 } */
+
+.main-header {
+  padding: 8px 10px;
+  background: #2ddf5c;
+  width: 100%;
+}
+
+/*For inline elements we cannot apply margin padding, so there display:inline-block comes handy*/
+/* display can be {inline, block, inline-block, none, hidden} */
+
+.main-nav__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-header > div,
+.main-nav {
+  display: inline-block;
+}
+
+.main-nav {
+  text-align: right;
+  width: calc(100% - 54px);
+}
