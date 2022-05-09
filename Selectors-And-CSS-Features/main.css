@@ -1,0 +1,34 @@
+/* In mdn documentstion we can find which tag or property is supported by which browser */
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  margin-bottom: 16px;
+  background: #fa923f;
+  padding: 8px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.main-section {
+  /* We should not use !important as it is not a good practice */
+  height: 800px !important;
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+/* anchor tags have special class "active" use to show active route */
+a.active {
+  color: purple;
+}
+
+/* :not(){} is a psuedo class used to exclude an element from applying css */
+:not(a) {
+  border: solid black 1px;
+}
