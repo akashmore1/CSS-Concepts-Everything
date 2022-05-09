@@ -96,6 +96,53 @@ body {
   background: white;
 }
 
+.button:focus {
+  /* outline is kind of border present outside box border and inside margin */
+  outline: none;
+}
+
+#key-features {
+  background: #ff1b68;
+  margin: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-feature {
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  color: white;
+  vertical-align: top;
+  text-align: center;
+}
+
+.key-feature__list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.key-feature__description {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  margin: 40px auto;
+  text-align: center;
+}
+
 .section-title {
   color: #2ddf5c;
   text-align: center;
