@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.main-header {
+  padding: 8px 10px;
+  background: #2ddf5c;
+  width: 100%;
+}
+
+/*For inline elements we cannot apply margin padding, so there display:inline-block comes handy*/
+/* display can be {inline, block, inline-block, none, hidden} */
+
+.main-nav__item {
+  margin: 0 16px;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-header > div,
+.main-nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  font-weight: bold;
+  /* To remove default underlining of anchor tag: */
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.main-nav {
+  text-align: right;
+  width: calc(100% - 74px);
+}
+
+.main-nav__item > a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+/* psuedo classes lets us define a style for a specific state of an element like hover */
+/* psuedo elements with tag:: => defines style of specific part of an element */
+.main-nav__item > a:hover,
+.main-nav__item > a:active {
+  color: #f6f6f6;
+  border-bottom: 5px solid white;
+}
+
+/* p::first-letter {
+  color: red;
+  font-size: 20px;
+} */
+
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  background: white;
+  color: #ff1b68;
+  border: none;
+}
+
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #cac7c7;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.4px solid #0e4f1f;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  color: #0e4f1f;
+  background: white;
+}
+
+.button:focus {
+  /* outline is kind of border present outside box border and inside margin */
+  outline: none;
+}
