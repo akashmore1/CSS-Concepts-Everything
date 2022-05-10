@@ -22,6 +22,12 @@ body {
   padding: 10px;
 }
 
+.plan__list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 .plan {
   background: #d5ffcc;
   text-align: center;
@@ -29,7 +35,6 @@ body {
   display: inline-block;
   width: 30%;
   vertical-align: middle;
-  margin: 0 28px;
 }
 
 .plan--highlighted {
