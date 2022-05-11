@@ -61,3 +61,12 @@
 2. We can consider z-index value is 0 by default.
 3. z-index value can be positive or negative.
 4. If element has postion: static; or other than static if element does not have any other position property, then z-index will have no impact on element.
+
+## Stacking context
+
+1. Suppose there are 2 parent elements P1 and P2 and they have two children elements c1 and c2 respectively.
+2. If we aaply 'z-index:10;' to P2, absolutely it will appear above P1 as z-index of P1 is auto.
+3. What will happen if we give 'z-index:100;' to c1 which is child of P1:
+4. Element c1 will not appear above P2 even though it has higher z-index than P2(10).
+5. This behvior is called Stacking context.
+6. c1 has higher Z-index, so it will appear above all other children of P1, but it cannot appear above other parent component P2 which has higher z-index that it's(c1's) parent i.e. P1.
