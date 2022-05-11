@@ -33,6 +33,15 @@
    b. But while giving right, left, top, bottom properties element will move across viewport if it does not have any non-static parent.
    c. When it has non-static parent element will move within the parent.
 
+## position: relative;
+
+1. When we apply position: relative to an element, other elements don't behave as if the realtive element does not exist. This is difference between relative with absolute and fixed.
+2. We can apply left, right, top, bottom properties to relative element.
+3. But unlike absolute and fixed, viewport is not the reference with respect to relative element will move.(when right, left, top, bottom applied.)
+4. For relative element, its original position is the reference for moving.
+5. Relative element can move all over the view port or html element.
+6. In order to fix it inside its parent, we can give overflow: property to its parent.e.g overflow: hidden;
+
 ## z-index
 
 1. By default z-index: auto; is applied to every element;
