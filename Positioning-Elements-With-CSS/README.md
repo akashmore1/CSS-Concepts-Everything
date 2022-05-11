@@ -15,13 +15,23 @@
 2. i.e. other elements will occupy the place of element with position 'fixed'.
 3. Element with position fixed will be out of actual document flow.
 4. So we can apply z-index to such element, in order to decide if this element will appear below or above other elements.
-5. If we apply postion fie=xed to an element, it will become inline-block.
+5. If we apply postion fixed to an element, it will become inline-block.
 6. After assigning fixed to an element, we cannot change display to inline or block. It will remain inline-block.
 7. Generally for navigation bar(main header of website) and for background images we use this property.
 8. When we apply top, bottom, right, left to element with fixed postion property, element will move with reference to view port.
 9. top: 0 will move element to top, same bottom:0 will move to bottom.
 10. Element with fixed position property will always refer to viewport. Even if we scroll, Element's postion will be unaffected.
 11. If we apply postion:fixed to a span, it will become inline-block.
+
+## position: absolute;
+
+1. position: absolute; behaves exactly like position: fixed; but
+2. The difference between absolute and fixed is that fixed position element moves with reference to viewport and absolute position element moves with reference to it's first non-static parent.
+3. Other behaviors of inline-block, z-index, other elements behave like absolute element doesn't exist are exactly same like fixed property.
+4. Why absolute need parent with non-static property?:
+   a. When we add position: absolute to an element, on scrolling it will move with other elements unlike fixed property.
+   b. But while giving right, left, top, bottom properties element will move across viewport if it does not have any non-static parent.
+   c. When it has non-static parent element will move within the parent.
 
 ## z-index
 
