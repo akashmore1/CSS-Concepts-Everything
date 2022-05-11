@@ -42,6 +42,19 @@
 5. Relative element can move all over the view port or html element.
 6. In order to fix it inside its parent, we can give overflow: property to its parent.e.g overflow: hidden;
 
+## position: sticky;
+
+1. When we add position: sticky to an element, nothing will happen just like relative.
+2. All other elements will not behave like sticky element does not exist.
+3. We can add left, right, top, bottom to sticky element.
+4. When we apply above properties initially nothing will be changed on page.
+5. e.g. we apply top: 10px; to sticky element, it will not move from its position at all.
+6. But as we scroll up, when element reaches to top with 10px distance remaining, sticky element will stick at that position, just like position: fixed.
+7. So sticky is combination of relative and fixed properties.
+8. After scrolling up, when content of parent element of sticky element will reach to top with 10px distance, sticky element will be scrolled up along with its parent element.
+9. Just like fixed, sticky element will move with reference of viewport.
+10. sticky is a new property and a lot of browser does not support it. Event chrome partially supports it.
+
 ## z-index
 
 1. By default z-index: auto; is applied to every element;
