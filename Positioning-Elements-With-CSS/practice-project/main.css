@@ -27,3 +27,14 @@ body {
   border: 5px solid black;
   margin: 10px;
 }
+
+.child-1 {
+  /* When we apply fixed position property to element, elements will become non-exsting to other elements */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 !important;
+  box-sizing: border-box;
+  z-index: -100;
+}

@@ -6,12 +6,20 @@
   clear: both;
 }
 
+.background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: url("../plans-background.jpg");
+  z-index: -1;
+}
+
 #plus-plan {
-  background-color: rgba(136, 218, 218, 0.5);
+  background-color: rgba(136, 218, 218, 0.9);
 }
 
 #pemium-plan {
-  background-color: rgba(4, 32, 32, 0.5);
+  background-color: rgba(4, 32, 32, 0.9);
 }
 
 #pemium-plan .main__title {
@@ -19,7 +27,7 @@
 }
 
 #pemium-plan .main__description {
-  color: rgb(33, 30, 30);
+  color: rgb(137, 130, 130);
 }
 
 #free-plan {
@@ -38,7 +46,7 @@
   width: 80%;
   border-left: none;
   padding: 20px;
-  background-color: rgba(183, 221, 221, 0.5);
+  background-color: rgba(183, 221, 221, 0.9);
 }
 
 .main__plans:hover,
