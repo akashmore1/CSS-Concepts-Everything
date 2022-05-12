@@ -20,7 +20,13 @@
   /* Refer readme.md to learn more. */
   background-position: left 10% bottom 10%;
 
-  background-color: #ff1b68;
+  /* background-origin: */
+
+  /* In order to understand background-origin lets give dotted border. */
+  border: dashed 5px red;
+  /* When we give dashed border we see that image is bigger at top bottom so dashed border contain image part. But on left and right image part is not in dashed border. */
+
+  /* background-color: #ff1b68; */
   width: 100%;
   height: 528px;
   padding: 10px;

@@ -38,3 +38,14 @@
    1. with combination of 'top, bottom with right left.'
    2. If we write 'background-position: top right;', then image will be moved to bottom and left fully until its top and right corner is displayed.
    3. We can combine this with % like 'background-position: left 10% bottom 20%;' and image's excess 10% will be cropped to left and same for 20% to bottom.
+
+#### background-origin property:
+
+1. background-origin property is similar like box-sizing property, only values are same.
+2. In box-sizing, we add all pading and border values in overall width, with value of '**background-origin: border-box;**'.
+3. In order to understand background-origin, give dotted border to any background-image.
+4. If image has extra height than height of container, then when we give dashed border we see that image is bigger at top bottom so dashed border contains image part. But on left and right image part is not in dashed border as there is no excess part of image width wise.
+5. This is exactly what we can control with background-origin property.
+6. if we give **background-origin: border-box;**, then image is completely present in dashed border, event if its size is more than container.
+7. If we give **background-origin: content-box;**, then image will have blank space within dashed border and inside image as well. Because this value gives some padding to image this happens.
+8. If we give **background-origin: padding-box;**, we will get default behaviour of image which is explained in point no. 4.
