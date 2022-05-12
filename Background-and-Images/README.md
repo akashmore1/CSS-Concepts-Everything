@@ -62,3 +62,10 @@
 1. This is a property, we rarely use, or not use at all.
 2. It is used todefine how scrolling will behave in a container that has background image.
 3. This property will allow use to use 'fixed, local, scroll' as values.
+
+#### background shorthand:
+
+1. Use **background: url() left 10% top 10%/cover no-repeat border-box padding-box fixed** as shorthand to all we leart above.
+2. Here the order is **background: background-image('Image path') background-position/background-size background-repeat background-origin background-clip background-attachment.**
+3. Here if we don't assign any value to background-clip, it we take value of border-origin by default.
+4. It's okay if we don't assign any value to background-attachment;
