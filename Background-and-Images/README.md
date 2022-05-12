@@ -49,3 +49,10 @@
 6. if we give **background-origin: border-box;**, then image is completely present in dashed border, event if its size is more than container.
 7. If we give **background-origin: content-box;**, then image will have blank space within dashed border and inside image as well. Because this value gives some padding to image this happens.
 8. If we give **background-origin: padding-box;**, we will get default behaviour of image which is explained in point no. 4.
+
+#### background-clip property:
+
+1. In all background-origin case, some part of image will be contained in dashed border. In order to clip image from dashed border, we use **background-clip** property.
+2. When we apply **background-clip: border-box;**, we get same behaviour as background-origin: border-box;
+3. But when we apply **background-clip: padding-box;**, we get behaviour where no part of image(top, left, bottom, right) is present in dashed border.
+4. When we apply **background-clip: content-box;**, image will get clipped before padding. It will not reach to dashed border.
