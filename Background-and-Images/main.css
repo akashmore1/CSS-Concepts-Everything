@@ -17,7 +17,8 @@
   /* background-repeat: repeat-x;
   background-repeat: repeat-y; */
 
-  background-position: 0 100%;
+  /* Refer readme.md to learn more. */
+  background-position: left 10% bottom 10%;
 
   background-color: #ff1b68;
   width: 100%;
