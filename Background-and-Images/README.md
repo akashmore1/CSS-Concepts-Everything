@@ -1,8 +1,8 @@
-# background and background-image Property
+# Background and Images Property
 
-## background-image
+## background and background-image
 
-1. We can apply background-image: url('<(imagePath)>') to add background as image.
+1. We can apply **_background-image: url('<(imagePath)>')_** to add background as image.
 2. If we apply background-image and background-color to same element, background-image will win irrespective of their order.
 3. We can have multiple images as background but either a background-image or a background-color to an element.
 
@@ -14,25 +14,25 @@
 2. background-size can be given values in px or in %.
 3. If background size is too small that its container, image will be shown muliple times, each image with a width of given px or %.
 4. If we give second argument to background-size, it will consider width and height resp. But image may become distorded in this case.
-5. If we give background-size: 50%, image width will occupy 50% of comtainer.
-6. If we give background-size: 100% 100%, image will occupy all space of container. In this case aspect ratio of image will become distorted.
+5. If we give **_background-size: 50%_**, image width will occupy 50% of container.
+6. If we give **_background-size: 100% 100%_**, image will occupy all space of container. In this case aspect ratio of image will become distorted.
 7. We can give one of the width or height auto to eliminate distortion.
-8. We can apply cover and contain in background-size.
+8. We can apply **_cover and contain_** in background-size.
 9. cover will make sure that entire container containing image should be covered in image with no blanck spaces.
 10. contain on the other hand will make sure entire image is shown shown in container, so container might have empty space.
 
 #### background-position property:
 
-1. We can background-podition value in px or %.
+1. We can background-position value in px or %.
 2. But in this case px and % behave differently unlike background-size.
-3. When we give value in px like 'background-position: 10px 10px;', first value is considered along x-axis and second along y-axis.
+3. When we give value in px like **_background-position: 10px 10px;_**, first value is considered along x-axis and second along y-axis.
 4. In above case of px, image will be moved 10px to right and 10px to bottom, so there will be blank pace at left and top.
 5. But when we give value in %, the behaviour is different.
-6. If we give 'background-position: 10%;':
+6. If we give '**_background-position: 10%;_**':
    1. There will not be any blank space, or image will not move out of container by 10% like in px.
    2. % will decide how much of the excess image that is cropped along x-axis need to be pushed to right.
-   3. If there is not excess of image along x-axis, 'background-position:0%;' will nothave any impact on image.
-   4. To give % value along y-axis, we give second argument to property like- 'background-position: 10% 20%;'.
+   3. If there is not excess of image along x-axis, '**_background-position:0%;_**' will not have any impact on image.
+   4. To give % value along y-axis, we give second argument to property like- '**_background-position: 10% 20%;_**'.
 7. There is predefined value for this property, 'center' which equal to '50% 50%'. Cnentral part of image is displayed in the container.
 8. Another way of giving value to 'background-position'(prefer this):
    1. with combination of 'top, bottom with right left.'
@@ -42,30 +42,30 @@
 #### background-origin property:
 
 1. background-origin property is similar like box-sizing property, only values are same.
-2. In box-sizing, we add all pading and border values in overall width, with value of '**background-origin: border-box;**'.
+2. In box-sizing, we add all pading and border values in overall width, with value of '**_background-origin: border-box;_**'.
 3. In order to understand background-origin, give dotted border to any background-image.
 4. If image has extra height than height of container, then when we give dashed border we see that image is bigger at top bottom so dashed border contains image part. But on left and right image part is not in dashed border as there is no excess part of image width wise.
 5. This is exactly what we can control with background-origin property.
-6. if we give **background-origin: border-box;**, then image is completely present in dashed border, event if its size is more than container.
-7. If we give **background-origin: content-box;**, then image will have blank space within dashed border and inside image as well. Because this value gives some padding to image this happens.
-8. If we give **background-origin: padding-box;**, we will get default behaviour of image which is explained in point no. 4.
+6. if we give **_background-origin: border-box;_**, then image is completely present in dashed border, event if its size is more than container.
+7. If we give **_background-origin: content-box;_**, then image will have blank space within dashed border and inside image as well. Because this value gives some padding to image this happens.
+8. If we give **_background-origin: padding-box;_**, we will get default behaviour of image which is explained in point no. 4.
 
 #### background-clip property:
 
-1. In all background-origin case, some part of image will be contained in dashed border. In order to clip image from dashed border, we use **background-clip** property.
-2. When we apply **background-clip: border-box;**, we get same behaviour as background-origin: border-box;
-3. But when we apply **background-clip: padding-box;**, we get behaviour where no part of image(top, left, bottom, right) is present in dashed border.
-4. When we apply **background-clip: content-box;**, image will get clipped before padding. It will not reach to dashed border.
+1. In all background-origin case, some part of image will be contained in dashed border. In order to clip image from dashed border, we use **_background-clip_** property.
+2. When we apply **_background-clip: border-box;_**, we get same behaviour as background-origin: border-box;
+3. But when we apply **_background-clip: padding-box;_**, we get behaviour where no part of image(top, left, bottom, right) is present in dashed border.
+4. When we apply **_background-clip: content-box;_**, image will get clipped before padding. It will not reach to dashed border.
 
 #### background-attachment property:
 
 1. This is a property, we rarely use, or not use at all.
 2. It is used todefine how scrolling will behave in a container that has background image.
-3. This property will allow use to use 'fixed, local, scroll' as values.
+3. This property will allow use to use '**_fixed, local, scroll_**' as values.
 
 #### background shorthand:
 
-1. Use **background: url() left 10% top 10%/cover no-repeat border-box padding-box fixed** as shorthand to all we leart above.
-2. Here the order is **background: background-image('Image path') background-position/background-size background-repeat background-origin background-clip background-attachment.**
+1. Use **_background: url() left 10% top 10%/cover no-repeat border-box padding-box fixed_** as shorthand to all we leart above.
+2. Here the order is **_background: background-image('Image path') background-position/background-size background-repeat background-origin background-clip background-attachment._**
 3. Here if we don't assign any value to background-clip, it we take value of border-origin by default.
 4. It's okay if we don't assign any value to background-attachment;
