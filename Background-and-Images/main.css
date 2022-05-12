@@ -30,7 +30,7 @@
   background-clip: border-box;
 
   /* short-hand of background: (refer readme.md)*/
-  background: url("./freedom.jpg") left 10% bottom 10% / cover no-repeat
+  background: url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat
     border-box;
 
   /* background-color: #ff1b68; */

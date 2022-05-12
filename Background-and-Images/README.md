@@ -69,3 +69,14 @@
 2. Here the order is **_background: background-image('Image path') background-position/background-size background-repeat background-origin background-clip background-attachment._**
 3. Here if we don't assign any value to background-clip, it we take value of border-origin by default.
 4. It's okay if we don't assign any value to background-attachment;
+
+## Styling Images
+
+1. If we give height and width to container of img and not the img tag itself, then there will be no effect on image.
+2. We have to select img tag by class or any selector we want, to give height and width to img with px or %;
+3. But most of the times, directly giving height and width to image can cause distortion in image.
+4. So generally, we give img{width: 100%};
+5. And we give img's container width and height.
+6. But as we seen in point 1. this will have no effect on image.
+7. This is because container might be inline or block.
+8. If we change display of container to inline-block, the image will follow it's container's height and width.
