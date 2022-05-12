@@ -56,3 +56,9 @@
 2. When we apply **background-clip: border-box;**, we get same behaviour as background-origin: border-box;
 3. But when we apply **background-clip: padding-box;**, we get behaviour where no part of image(top, left, bottom, right) is present in dashed border.
 4. When we apply **background-clip: content-box;**, image will get clipped before padding. It will not reach to dashed border.
+
+#### background-attachment property:
+
+1. This is a property, we rarely use, or not use at all.
+2. It is used todefine how scrolling will behave in a container that has background image.
+3. This property will allow use to use 'fixed, local, scroll' as values.
