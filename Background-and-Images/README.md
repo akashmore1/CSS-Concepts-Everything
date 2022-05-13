@@ -119,3 +119,16 @@
 15. Opposite of farthest-side is closest-side.
 16. Other similar keywords are closest-corner and farthest-corner.
 17. We can also specify color stops just like linear-gradient. Refer point 10 in linear-gradient.
+
+## Stacking multiple backgrounds
+
+1. We can give multiple background-images to an element.
+2. This is possible only when there is some transperency to all backgrounds. So that other background which is below in stack is visible.
+3. We cannot give background-image and background-color at the same time.
+4. If we do only background-image will be displayed. bakground-color will be present below background-image in the stack.
+5. Mostly we use gradient over background-image to give some feel to image.
+6. We can use background shorthand to stack background images.
+7. Stack diretion is from left to right. i.e. Leftmost background-image will be topmost in z-axis.
+8. All background images should be separated by comma.
+9. e.g background: background1, background2 ...etc
+10. Example we used in this project:- **_'background: linear-gradient(to top, rgba(215, 127, 33, 0.5), transparent), url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat border-box;'_**

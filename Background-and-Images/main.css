@@ -30,8 +30,8 @@
   background-clip: border-box;
 
   /* short-hand of background: (refer readme.md)*/
-  background: url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat
-    border-box;
+  /* background: url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat
+    border-box; */
 
   /* For background image linear gradient refer readme.md */
   /* We can give infinite colors as arguments separated by comma. */
@@ -43,6 +43,10 @@
 
   /* For radial-gradient refer readme.md */
   /* background-image: radial-gradient(circle at top left, red, white); */
+
+  /* Stacking background-images */
+  background: linear-gradient(to top, rgba(215, 127, 33, 0.4) 10%, transparent),
+    url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat border-box;
 
   /* background-color: #ff1b68; */
   width: 100%;
