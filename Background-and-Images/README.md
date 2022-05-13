@@ -99,3 +99,23 @@
 9. If we add second or last color as trasparent, its gives a beautiful effect.
 10. We can give % to colors as well to specify where the color should start and stop in gradient.
 11. e.g. **_*background-image: linear-gradient(30deg, red 10%, white 90%);*_**
+
+### radial-gradient
+
+1. **_background-image: radial-gradient(red, white);_**
+2. By default, radial gradient is eclipse, and centered at its container.
+3. In above case, radial gradient will have center with red color.
+4. We can have radial-gradient with circular shape. We just need to specify, **_backgroung-image: radial-gradient(circle, red, blue, orange)_** in first argument.
+5. We can specify where circle's center will be located by adding **_at_** in first argument.
+6. e.g **_backgroung-image: radial-gradient(circle at top, red, blue, orange)_** or we can also specify like **_backgroung-image: radial-gradient(circle at top left, red, blue, orange)_**
+7. We can also specify circle's position by custom values.
+8. e.g. **_backgroung-image: radial-gradient(circle at 20% 50%, red, blue, orange)_**. In this case, circle's center will be 20% far from left and 50% far from top. (Also we canuse px instead of %)
+9. We can also add size of circle by giving % or px in front of circle.
+10. e.g. **_backgroung-image: radial-gradient(circle 20px at 20% 50%, red, blue, orange)_**
+11. In case of elipse, to detemine size we need to give two values as elipse has two centers.
+12. e.g. **_backgroung-image: radial-gradient(elipse 20px 40px at 20% 50%, red, blue, orange)_**- first value is width and second value is height.
+13. Another way of specifying size is using keywords:
+14. e.g. **_backgroung-image: radial-gradient(elipse farthest-side at 20% 50%, red, blue, orange)_** this means eclipse will be enough big to touch its farthest side.
+15. Opposite of farthest-side is closest-side.
+16. Other similar keywords are closest-corner and farthest-corner.
+17. We can also specify color stops just like linear-gradient. Refer point 10 in linear-gradient.

@@ -33,13 +33,16 @@
   background: url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat
     border-box;
 
-  /* For background image refer readme.md */
+  /* For background image linear gradient refer readme.md */
   /* We can give infinite colors as arguments separated by comma. */
   /* background-image: linear-gradient(
     to bottom,
     rgb(249, 1, 1, 0.8),
     transparent 60%
   ); */
+
+  /* For radial-gradient refer readme.md */
+  /* background-image: radial-gradient(circle at top left, red, white); */
 
   /* background-color: #ff1b68; */
   width: 100%;
