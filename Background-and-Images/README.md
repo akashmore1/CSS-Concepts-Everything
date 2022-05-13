@@ -132,3 +132,10 @@
 8. All background images should be separated by comma.
 9. e.g background: background1, background2 ...etc
 10. Example we used in this project:- **_'background: linear-gradient(to top, rgba(215, 127, 33, 0.5), transparent), url("./images/freedom.jpg") left 10% bottom 10% / cover no-repeat border-box;'_**
+
+## filters
+
+1. Suppose we have div with certain width and height. We can apply filter on that div.
+2. e.g. filter: blur(10%).
+3. There are multiple things we can do with filter, like opacity, saturation etc.
+4. We can appy multiple filters on a element. refer mdn for filters.
