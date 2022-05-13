@@ -80,3 +80,22 @@
 6. But as we seen in point 1. this will have no effect on image.
 7. This is because container might be inline or block.
 8. If we change display of container to inline-block, the image will follow it's container's height and width.
+
+## Gradients(linear and radial)
+
+1. Gradients both linear and radial are treated as images.(background images)
+2. So to target sub-property gradient, we use background-image propery.
+
+### linear-gradient
+
+1. Linear gradient can be used like: **_background-image: linear-gradient();_**
+2. Linear gradient function has two arguments: First argument is always direction and second argument is combination of colors we want in gradient.
+3. If we don't specify direction in first argmentment and directly specify colors, then direction by default is taken as from top to bottom.
+4. We can give infinite colors as arguments separated by comma.
+5. e.g. **_*background-image: linear-gradient(to bottom right, red, white);*_**
+6. We can specify the diretion in degrees as well.
+7. e.g. **_*background-image: linear-gradient(30deg, red, white);*_**
+8. In degrees, 180deg means default direction which is to bottom. And 0deg means reverse of default direction i.e. to top
+9. If we add second or last color as trasparent, its gives a beautiful effect.
+10. We can give % to colors as well to specify where the color should start and stop in gradient.
+11. e.g. **_*background-image: linear-gradient(30deg, red 10%, white 90%);*_**
