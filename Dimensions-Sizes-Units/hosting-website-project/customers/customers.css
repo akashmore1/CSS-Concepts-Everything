@@ -17,6 +17,7 @@
     display: inline-block;
     vertical-align: middle;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    max-width: 946px;
   }
 
   .testimonial__image {
