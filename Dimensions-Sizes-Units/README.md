@@ -99,3 +99,8 @@ width: 0
 To make sure this works correctly on different browsers, you have to add additional code to it. This blog post nicely summarizes all the code needed right here.
 
 Make sure to follow these approaches in case you don't want to display the scrollbars on Windows machines.
+
+## Which unit should we use?
+
+In general go for following approach.
+![How is size calulated](./unit-preference.jpeg)
