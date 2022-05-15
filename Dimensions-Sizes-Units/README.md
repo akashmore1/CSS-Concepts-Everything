@@ -104,3 +104,8 @@ Make sure to follow these approaches in case you don't want to display the scrol
 
 In general go for following approach.
 ![How is size calulated](./unit-preference.jpeg)
+
+## auto value:
+
+1. 'margin: auto;' only works block level elements with an explicitly assigned width tough!
+2. We can apply width to block elements.
