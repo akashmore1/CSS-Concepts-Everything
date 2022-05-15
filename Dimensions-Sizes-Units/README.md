@@ -25,3 +25,7 @@
    9. left
    10. right
    11. border-radius
+
+## How is size calculated?
+
+![How is size calulated](./SizeCalculate.jpeg)
