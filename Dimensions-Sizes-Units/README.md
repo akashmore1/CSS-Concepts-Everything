@@ -73,3 +73,29 @@
 3. Always rem over em. But if we want to use em, we can use it in child element which does not have any child.(leaf element in tree structure.)
 4. We can apply rem to other properties as well apart from font-size. e.g. (margin, padding)
 5. Do prefer rem for margin and padding. Just be sure if page whole structure doesn't collapse when font-size is increased in browser setting.
+
+### vh and vw
+
+1. vh, vw as name suggest refers to height and width of viewport.
+2. Generally used to assign height and width to backdrop of 100% height and width.
+3. 10vh means 10% of viewport height.
+4. There are two more units vmin and vmax. (10vmin means 10% of smaller viewport)
+
+#### Hiding Scrollbars on Windows machines
+
+After adding vw , you probably saw that the scrollbars appeared in case you are working on Windows. This happens as using vw on Windows does not include the scrollbars - vw: 100 is equal to 100% of the viewport width + the scrollbars. On the Mac this is not an issue, but when using Windows it is as the scrollbars are displayed by default.
+
+In case you don't want to display these scrollbars, you can use one of these solutions:
+
+- Use width: 100% instead of vw: 100
+
+- Add overflow-x: hidden; to the body selector in the shared.css file to hide the horizontal scrollbar (or overflow-y: hidden to hide the vertical scrollbar)
+
+Alternatively you could also use the ::-webkit-scrollbar pseudo element. Simply add the following code to the shared.css file:
+
+body: :-webkit-scrollbar {
+width: 0
+}
+To make sure this works correctly on different browsers, you have to add additional code to it. This blog post nicely summarizes all the code needed right here.
+
+Make sure to follow these approaches in case you don't want to display the scrollbars on Windows machines.
