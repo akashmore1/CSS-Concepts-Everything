@@ -181,7 +181,6 @@ body {
   background: white;
   width: 80%;
   height: 100vh;
-  display: none;
 }
 
 .mobile-nav__items {
@@ -200,4 +199,8 @@ body {
 .mobile-nav__item a {
   font-size: 1.5rem;
   text-decoration: none;
+}
+
+.mobile-nav__display {
+  display: none;
 }
