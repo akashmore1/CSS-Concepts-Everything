@@ -89,24 +89,6 @@
   margin: 0.5rem 0;
 }
 
-@media (min-width: 40rem) {
-  .plan__list {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
-
-  .plan {
-    display: inline-block;
-    width: 30%;
-    margin: 0.5rem;
-  }
-
-  .plan__annotation {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
-}
-
 #key-features {
   background: #ff1b68;
   margin-top: 5rem;
@@ -199,4 +181,22 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0.5rem;
+  }
+
+  .plan__annotation {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
 }
