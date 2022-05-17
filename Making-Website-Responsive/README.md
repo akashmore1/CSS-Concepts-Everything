@@ -20,3 +20,16 @@
 6. Without viewport metatag, we cannot create a mobile design for our website.
 7. If we don't want out website to have any mobile device design, then not using viewport tag is best.
 8. Nowadays websites are made with mobile first approach. i.e. Mobile view is first developed and then desktop view.
+
+## Media queries:
+
+1. We will make our website looke good in smaller device, from width of 200px to 640px.
+2. Read media query just like if statement.
+3. @media (min-width: 640px){<'selectors and properties'>}
+4. From here onwards we will apply mobile first approach, than means the code outside of media queries is actually for mobile devices. Code inside media-queries is for website.
+5. We can have multiple media queries for multiple devices.
+6. Two different media queries should have different limit.
+7. If we add first media query: **_@media (min-width: 40rem) {}_** and second media query: **_@media (min-width: 60rem) {}_**, this is valid syntax and we can specify two different design for two queries.
+8. But if apply 2nd media query first and first query after that, then the code is not valid.
+9. As we increase width lesser to more, our media query will be activated once 40rem width is present. And when we reach 60rem, there will be no media query **after** 40rem media query, as we changed order. So no media query will be applied when width is 60rem in this case.
+10. So we should always keep the order correct when we apply media queries.
