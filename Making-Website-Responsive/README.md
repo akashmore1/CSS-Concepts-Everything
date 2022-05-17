@@ -23,7 +23,7 @@
 
 ## Media queries:
 
-1. We will make our website looke good in smaller device, from width of 200px to 640px.
+1. We will make our website look good in smaller device, from width of 200px to 640px.
 2. Read media query just like if statement.
 3. @media (min-width: 640px){<'selectors and properties'>}
 4. From here onwards we will apply mobile first approach, than means the code outside of media queries is actually for mobile devices. Code inside media-queries is for website.
@@ -33,3 +33,10 @@
 8. But if apply 2nd media query first and first query after that, then the code is not valid.
 9. As we increase width lesser to more, our media query will be activated once 40rem width is present. And when we reach 60rem, there will be no media query **after** 40rem media query, as we changed order. So no media query will be applied when width is 60rem in this case.
 10. So we should always keep the order correct when we apply media queries.
+11. Generally we right media queries after css code, at the end.
+
+## Finding right breaking points:
+
+1. Go to mydevice.io and then 'compare my devices'.
+2. There we get css width and height of different devices.
+3. We can decide width and height with multiple devices as breaking point, as this ensures our website looks good on multiple devices.
