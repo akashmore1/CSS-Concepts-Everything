@@ -108,8 +108,9 @@
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
+  /* display: inline-block; */
+  /* width: 30%; */
+  margin: 2rem 0;
   vertical-align: top;
 }
 
@@ -204,6 +205,12 @@
     max-width: 342px;
     text-align: center;
     margin: auto;
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
   }
 }
 
