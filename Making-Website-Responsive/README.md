@@ -40,3 +40,13 @@
 1. Go to mydevice.io and then 'compare my devices'.
 2. There we get css width and height of different devices.
 3. We can decide width and height with multiple devices as breaking point, as this ensures our website looks good on multiple devices.
+
+## Working with logical operator for media queries:
+
+1. We can add media queries as follows:
+2. **_@media(min-width: 40rem) and (min-height: 60rem){}_**
+3. If we have special condition for loke specific device in portrait mode, we use media queries with portrait mode.
+4. We can also use orientation to specify portrait mode.
+5. e.g. **_@media(min-width: 40rem) and (orientation: portrait){}_** also **_@media(min-width: 40rem) and (orientation: landscape){}_**
+6. Just like 'and' we can also have 'or'. We can use ',' to specify or operator.
+7. e.g. **_@media(min-width: 40rem), (orientation: landscape){}_** -> ',' works as 'or'.
