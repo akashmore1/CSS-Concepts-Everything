@@ -72,10 +72,7 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -199,4 +196,22 @@ body {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+    /* display: none; */
+    text-align: right;
+    width: calc(100% - 30px);
+    vertical-align: middle;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .main-header {
+    padding: 1rem 1rem;
+  }
 }
