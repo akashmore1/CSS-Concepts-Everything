@@ -1,5 +1,6 @@
 main {
   padding-top: 2rem;
+  margin-top: 3rem;
 }
 
 .background {
@@ -87,4 +88,34 @@ main {
 
 #premium .package__subtitle {
   color: #bbb;
+}
+
+@media (min-width: 40rem) {
+  main {
+    max-width: 1500px;
+    margin: 3rem auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  #plus,
+  #premium {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #plus:hover,
+  #premium:hover,
+  #plus:active,
+  #premium:active {
+    border-left-color: #ff5454;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right: 4px solid #ff5454;
+  }
 }
