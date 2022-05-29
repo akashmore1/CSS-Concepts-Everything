@@ -34,3 +34,10 @@ main {
   display: block;
   margin-top: 1rem;
 }
+@media (min-width: 40rem) {
+  .signup-form {
+    padding: 1rem;
+    width: 25rem;
+    margin: auto;
+  }
+}
