@@ -5,4 +5,4 @@
 3. flex-flow
 4. justify-content
 5. align-items
-6. align-conten
+6. align-content
