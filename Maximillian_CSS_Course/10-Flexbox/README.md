@@ -16,3 +16,10 @@ property to container.
 ![understanding flexbox](./UnderstandingFlexbox.jpeg)
 
 ## Creating a flex container
+
+1. When we apply display: flex; to container, all its children will become flex-items
+2. First thing that will happen when we apply display: flex; width-wise is all flex-items will take minimum space width-wise.
+3. If we increase width of screen the width of container increases(If width od container is not specified.)
+4. If we decrease width of screen, the width of flex item will also shrink, but it shrinks until the content of that flex item.
+5. Height of container will be equal to height of flex item with maximum height;
+6. All other flex item will get height equal to height of flex item with maximum height(If their height is not specified already)
