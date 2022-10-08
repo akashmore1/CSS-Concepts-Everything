@@ -28,3 +28,5 @@ property to container.
 
 1. Default value of flex direction is row, in which main axis is horizontal and cross axis is vertical
 2. In case of flex direction horizontal, default width will be maximum required for content inside and default height will be height of maximum height element of height of container.
+3. If we apply flex direction: column; main axis will become vertical from top to bottom and cross axis will become horizontal from left to right.
+4. In this case, default height will be minimum only required for content and default width will be maximum of width of container.
