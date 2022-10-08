@@ -23,3 +23,8 @@ property to container.
 4. If we decrease width of screen, the width of flex item will also shrink, but it shrinks until the content of that flex item.
 5. Height of container will be equal to height of flex item with maximum height;
 6. All other flex item will get height equal to height of flex item with maximum height(If their height is not specified already)
+
+## Flex-direction
+
+1. Default value of flex direction is row, in which main axis is horizontal and cross axis is vertical
+2. In case of flex direction horizontal, default width will be maximum required for content inside and default height will be height of maximum height element of height of container.
