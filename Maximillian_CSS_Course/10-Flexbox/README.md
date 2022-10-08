@@ -38,4 +38,5 @@ property to container.
 3. If we apply **flex-wrap: wrap;**, when we reduce screen size, the last element will go to below row and take default minimum height if height is not assigned to it explixitaly.
 4. If we keep reducing screen size, second last element will get new row. and default height will be height of element with maximum height among two element in second row
 5. If we apply, **flex-wrap: wrap-reverse;**, wrapping will happen in reverse order.
-6. i.e. instead of last element, first element will go to second line, as we reduce screen length.
+6. i.e. instead of last element going to second line, it will go to fist line and rest elements will go to second line.
+7. Height of last element in first row, will behave similarly as in height in **flex-wrap: wrap;**

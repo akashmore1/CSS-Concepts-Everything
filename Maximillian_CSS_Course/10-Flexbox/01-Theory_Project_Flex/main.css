@@ -20,7 +20,7 @@ body {
   border: 5px solid black;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 }
 
 .item-1 {
