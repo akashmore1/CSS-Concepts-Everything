@@ -31,6 +31,10 @@ property to container.
 3. If we apply flex direction: column; main axis will become vertical from top to bottom and cross axis will become horizontal from left to right.
 4. In this case, default height will be minimum only required for content and default width will be maximum of width of container.
 
+## Understanding flex direction in detail
+
+![flex direction](./Flex-direction.jpeg)
+
 ## flex-wrap
 
 1. Default value of flex-wrap: nowrap;
