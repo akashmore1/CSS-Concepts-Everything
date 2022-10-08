@@ -30,3 +30,10 @@ property to container.
 2. In case of flex direction horizontal, default width will be maximum required for content inside and default height will be height of maximum height element of height of container.
 3. If we apply flex direction: column; main axis will become vertical from top to bottom and cross axis will become horizontal from left to right.
 4. In this case, default height will be minimum only required for content and default width will be maximum of width of container.
+
+## flex-wrap
+
+1. Default value of flex-wrap: nowrap;
+2. In this case elements will take width required by it and will not get wrapped when screen width is minimized.
+3. If we apply **flex-wrap: wrap;**, when we reduce screen size, the last element will go to below row and take default minimum height if height is not assigned to it explixitaly.
+4. If we keep reducing screen size, second last element will get new row. and default height will be height of element with maximum height among two element in second row
