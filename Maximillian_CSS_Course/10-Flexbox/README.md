@@ -51,12 +51,13 @@ property to container.
 2. justify-content property is always applied on main axis, so if flex-direction changes, main axis changes so does the the property.
 3. When we apply display: flex; all items will take minimum width possible and maximum height posiible, as we have seen already
 4. When we apply **justify-content: center;** property all flex items will be aligned horizontaly along main axis.
-5. When we apply flex-direction: column, interesting things happen
-6. When we apply **justify-content: center;** property all flex items will be aligned horizontaly along main axis.(In this case vertically)
-7. Important thing to note here is now items will not occupy maximum height posible, actaullay it's the opposite.
-8. All items will occupy minimum height possible.
 
 ## align-items:
 
 1. align-items property is applied to container which has display: flex; property.
 2. align-items property is always applied on cross axis, so if flex-direction changes, cross axis changes so does the the property.
+3. When we apply flex-direction: column, interesting things happen
+4. When we apply **align-items: center;** property all flex items will be aligned horizontaly along main axis.(In this case vertically)
+5. Important thing to note here is now items will not occupy maximum width posible, actaullay it's the opposite.
+6. (👆This is normal case when we apply **flex-direction: column;** items will take minimum height and maximum width)
+7. All items will occupy minimum height possible.

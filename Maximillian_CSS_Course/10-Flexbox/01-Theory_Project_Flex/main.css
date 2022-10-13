@@ -19,8 +19,9 @@ body {
   padding: 10px;
   border: 5px solid black;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .item-1 {
