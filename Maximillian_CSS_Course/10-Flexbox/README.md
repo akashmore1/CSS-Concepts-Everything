@@ -61,3 +61,5 @@ property to container.
 5. Important thing to note here is now items will not occupy maximum width posible, actaullay it's the opposite.
 6. (👆This is normal case when we apply **flex-direction: column;** items will take minimum height and maximum width)
 7. All items will occupy minimum height possible.
+
+![align items](./align_items.png)
