@@ -52,6 +52,8 @@ property to container.
 3. When we apply display: flex; all items will take minimum width possible and maximum height posiible, as we have seen already
 4. When we apply **justify-content: center;** property all flex items will be aligned horizontaly along main axis.
 
+![justify content](./justify-content.png)
+
 ## align-items:
 
 1. align-items property is applied to container which has display: flex; property.
