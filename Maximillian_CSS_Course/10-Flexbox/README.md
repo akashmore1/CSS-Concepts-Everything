@@ -44,3 +44,13 @@ property to container.
 5. If we apply, **flex-wrap: wrap-reverse;**, wrapping will happen in reverse order.
 6. i.e. instead of last element going to second line, it will go to fist line and rest elements will go to second line.
 7. Height of last element in first row, will behave similarly as in height in **flex-wrap: wrap;**
+
+## justify-content:
+
+1. justify-content property is applied to container which has display: flex; property.
+2. justify-content property is always applied on main axis, so if flex-direction changes, main axis changes so does the the property.
+
+## align-items:
+
+1. align-items property is applied to container which has display: flex; property.
+2. align-items property is always applied on cross axis, so if flex-direction changes, cross axis changes so does the the property.
